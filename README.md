@@ -10,6 +10,8 @@ npm install -g see-dirtree
 
 ## Usage
 
+>This command will show files all
+
 ```
 tree
 ```
