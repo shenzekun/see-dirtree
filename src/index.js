@@ -72,7 +72,7 @@ const jsonTree = path => {
 let result = jsonTree(program.directory);
 
 
-console.log(result)
+// console.log(result)
 let { border, contain, last } = actions;
 const printTree = (data, placeholder) => {
   for (let i in data) {
