@@ -1,6 +1,6 @@
 # see-dirtree
 
-This is commandline tool to show catalog tree
+This is commandLine tool to show catalog tree
 
 ## Install
 
@@ -31,3 +31,21 @@ Usage: tree [options]
     -e, --export [epath]   export into file
     -h, --help             output usage information
 ```
+
+
+
+**Example:**
+
+* You can export data to a file.Input this command below,you can see data.txt in your current path.
+
+```
+tree -e data.txt
+```
+
+* You can see catalog tree with color(random color)
+
+```
+tree -c
+```
+
+
