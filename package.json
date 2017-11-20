@@ -1,0 +1,29 @@
+{
+  "name": "see-dirtree",
+  "version": "1.0.0",
+  "description": "This is commandline tool to show catalog tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenzekun/see-dirtree.git"
+  },
+  "keywords": [
+    "tree",
+    "catalog",
+    "directory",
+    "list"
+  ],
+  "author": "shenzekun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shenzekun/see-dirtree/issues"
+  },
+  "homepage": "https://github.com/shenzekun/see-dirtree#readme",
+  "dependencies": {
+    "cli-color": "^1.2.0",
+    "commander": "^2.11.0"
+  }
+}

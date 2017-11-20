@@ -1,0 +1,1296 @@
+
+see-dirtree
+├──.gitignore
+├──1.txt
+├──LICENSE
+├──README.md
+├──package-lock.json
+├──package.json
+├──src
+│  ├──index.js
+│  ├──x.js
+│  ├──i
+│  │  └──i.js
+├──node_modules
+│  ├──timers-ext
+│  │  ├──.lint
+│  │  ├──.npmignore
+│  │  ├──.travis.yml
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──delay.js
+│  │  ├──max-timeout.js
+│  │  ├──once.js
+│  │  ├──package.json
+│  │  ├──throttle.js
+│  │  ├──valid-timeout.js
+│  │  ├──test
+│  │  │  ├──delay.js
+│  │  │  ├──max-timeout.js
+│  │  │  ├──once.js
+│  │  │  ├──throttle.js
+│  │  │  └──valid-timeout.js
+│  ├──next-tick
+│  │  ├──.lint
+│  │  ├──.npmignore
+│  │  ├──.travis.yml
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──index.js
+│  │  ├──package.json
+│  │  ├──test
+│  │  │  └──index.js
+│  ├──memoizee
+│  │  ├──.editorconfig
+│  │  ├──.npmignore
+│  │  ├──.testignore
+│  │  ├──CHANGELOG.md
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──appveyor.yml
+│  │  ├──index.js
+│  │  ├──methods-plain.js
+│  │  ├──methods.js
+│  │  ├──package.json
+│  │  ├──plain.js
+│  │  ├──profile.js
+│  │  ├──weak-plain.js
+│  │  ├──weak.js
+│  │  ├──test
+│  │  │  ├──index.js
+│  │  │  ├──methods-plain.js
+│  │  │  ├──methods.js
+│  │  │  ├──plain.js
+│  │  │  ├──profile.js
+│  │  │  ├──weak-plain.js
+│  │  │  ├──weak.js
+│  │  │  ├──normalizers
+│  │  │  │  ├──get-1.js
+│  │  │  │  ├──get-fixed.js
+│  │  │  │  ├──get-primitive-fixed.js
+│  │  │  │  ├──get.js
+│  │  │  │  └──primitive.js
+│  │  │  ├──lib
+│  │  │  │  ├──configure-map.js
+│  │  │  │  ├──methods.js
+│  │  │  │  ├──registered-extensions.js
+│  │  │  │  ├──resolve-length.js
+│  │  │  │  ├──resolve-normalize.js
+│  │  │  │  ├──resolve-resolve.js
+│  │  │  │  └──weak.js
+│  │  │  ├──ext
+│  │  │  │  ├──async.js
+│  │  │  │  ├──dispose.js
+│  │  │  │  ├──max-age.js
+│  │  │  │  ├──max.js
+│  │  │  │  ├──promise.js
+│  │  │  │  └──ref-counter.js
+│  │  ├──normalizers
+│  │  │  ├──get-1.js
+│  │  │  ├──get-fixed.js
+│  │  │  ├──get-primitive-fixed.js
+│  │  │  ├──get.js
+│  │  │  └──primitive.js
+│  │  ├──lib
+│  │  │  ├──configure-map.js
+│  │  │  ├──methods.js
+│  │  │  ├──registered-extensions.js
+│  │  │  ├──resolve-length.js
+│  │  │  ├──resolve-normalize.js
+│  │  │  ├──resolve-resolve.js
+│  │  │  └──weak.js
+│  │  ├──ext
+│  │  │  ├──async.js
+│  │  │  ├──dispose.js
+│  │  │  ├──max-age.js
+│  │  │  ├──max.js
+│  │  │  ├──promise.js
+│  │  │  └──ref-counter.js
+│  │  ├──benchmark
+│  │  │  └──fibonacci.js
+│  ├──lru-queue
+│  │  ├──.lint
+│  │  ├──.npmignore
+│  │  ├──.travis.yml
+│  │  ├──CHANGES
+│  │  ├──LICENCE
+│  │  ├──README.md
+│  │  ├──index.js
+│  │  ├──package.json
+│  │  ├──test
+│  │  │  └──index.js
+│  ├──is-promise
+│  │  ├──.npmignore
+│  │  ├──.travis.yml
+│  │  ├──LICENSE
+│  │  ├──index.js
+│  │  ├──package.json
+│  │  └──readme.md
+│  ├──event-emitter
+│  │  ├──.lint
+│  │  ├──.npmignore
+│  │  ├──.testignore
+│  │  ├──.travis.yml
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──all-off.js
+│  │  ├──emit-error.js
+│  │  ├──has-listeners.js
+│  │  ├──index.js
+│  │  ├──package.json
+│  │  ├──pipe.js
+│  │  ├──unify.js
+│  │  ├──test
+│  │  │  ├──all-off.js
+│  │  │  ├──emit-error.js
+│  │  │  ├──has-listeners.js
+│  │  │  ├──index.js
+│  │  │  ├──pipe.js
+│  │  │  └──unify.js
+│  │  ├──benchmark
+│  │  │  ├──many-on.js
+│  │  │  └──single-on.js
+│  ├──es6-weak-map
+│  │  ├──.lint
+│  │  ├──.npmignore
+│  │  ├──.travis.yml
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──implement.js
+│  │  ├──index.js
+│  │  ├──is-implemented.js
+│  │  ├──is-native-implemented.js
+│  │  ├──is-weak-map.js
+│  │  ├──package.json
+│  │  ├──polyfill.js
+│  │  ├──valid-weak-map.js
+│  │  ├──test
+│  │  │  ├──implement.js
+│  │  │  ├──index.js
+│  │  │  ├──is-implemented.js
+│  │  │  ├──is-native-implemented.js
+│  │  │  ├──is-weak-map.js
+│  │  │  ├──polyfill.js
+│  │  │  └──valid-weak-map.js
+│  ├──es6-symbol
+│  │  ├──.lint
+│  │  ├──.npmignore
+│  │  ├──.travis.yml
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──implement.js
+│  │  ├──index.js
+│  │  ├──is-implemented.js
+│  │  ├──is-native-implemented.js
+│  │  ├──is-symbol.js
+│  │  ├──package.json
+│  │  ├──polyfill.js
+│  │  ├──validate-symbol.js
+│  │  ├──test
+│  │  │  ├──implement.js
+│  │  │  ├──index.js
+│  │  │  ├──is-implemented.js
+│  │  │  ├──is-native-implemented.js
+│  │  │  ├──is-symbol.js
+│  │  │  ├──polyfill.js
+│  │  │  └──validate-symbol.js
+│  ├──es6-iterator
+│  │  ├──.editorconfig
+│  │  ├──.npmignore
+│  │  ├──CHANGELOG.md
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──appveyor.yml
+│  │  ├──array.js
+│  │  ├──for-of.js
+│  │  ├──get.js
+│  │  ├──index.js
+│  │  ├──is-iterable.js
+│  │  ├──package.json
+│  │  ├──string.js
+│  │  ├──valid-iterable.js
+│  │  ├──test
+│  │  │  ├──.eslintrc.json
+│  │  │  ├──array.js
+│  │  │  ├──for-of.js
+│  │  │  ├──get.js
+│  │  │  ├──index.js
+│  │  │  ├──is-iterable.js
+│  │  │  ├──string.js
+│  │  │  ├──valid-iterable.js
+│  │  │  ├──#
+│  │  │  │  └──chain.js
+│  │  ├──#
+│  │  │  └──chain.js
+│  ├──es5-ext
+│  │  ├──.editorconfig
+│  │  ├──.lint
+│  │  ├──.lintignore
+│  │  ├──.npmignore
+│  │  ├──CHANGELOG.md
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──appveyor.yml
+│  │  ├──circle.yml
+│  │  ├──global.js
+│  │  ├──index.js
+│  │  ├──optional-chaining.js
+│  │  ├──package.json
+│  │  ├──safe-to-string.js
+│  │  ├──to-short-string-representation.js
+│  │  ├──test
+│  │  │  ├──.eslintrc.json
+│  │  │  ├──__tad.js
+│  │  │  ├──global.js
+│  │  │  ├──optional-chaining.js
+│  │  │  ├──safe-to-string.js
+│  │  │  ├──to-short-string-representation.js
+│  │  │  ├──string
+│  │  │  │  ├──format-method.js
+│  │  │  │  ├──is-string.js
+│  │  │  │  ├──random-uniq.js
+│  │  │  │  ├──raw
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──from-code-point
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──#
+│  │  │  │  │  ├──at.js
+│  │  │  │  │  ├──camel-to-hyphen.js
+│  │  │  │  │  ├──capitalize.js
+│  │  │  │  │  ├──case-insensitive-compare.js
+│  │  │  │  │  ├──count.js
+│  │  │  │  │  ├──hyphen-to-camel.js
+│  │  │  │  │  ├──indent.js
+│  │  │  │  │  ├──last.js
+│  │  │  │  │  ├──pad.js
+│  │  │  │  │  ├──plain-replace-all.js
+│  │  │  │  │  ├──plain-replace.js
+│  │  │  │  │  ├──uncapitalize.js
+│  │  │  │  │  ├──starts-with
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──repeat
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──normalize
+│  │  │  │  │  │  ├──_data.js
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──ends-with
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──contains
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──code-point-at
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──@@iterator
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  ├──reg-exp
+│  │  │  │  ├──escape.js
+│  │  │  │  ├──is-reg-exp.js
+│  │  │  │  ├──valid-reg-exp.js
+│  │  │  │  ├──#
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-sticky.js
+│  │  │  │  │  ├──is-unicode.js
+│  │  │  │  │  ├──unicode
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  └──is-implemented.js
+│  │  │  │  │  ├──sticky
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  └──is-implemented.js
+│  │  │  │  │  ├──split
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──search
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──replace
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──match
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  ├──object
+│  │  │  │  ├──_iterate.js
+│  │  │  │  ├──assign-deep.js
+│  │  │  │  ├──clear.js
+│  │  │  │  ├──compact.js
+│  │  │  │  ├──compare.js
+│  │  │  │  ├──copy-deep.js
+│  │  │  │  ├──copy.js
+│  │  │  │  ├──count.js
+│  │  │  │  ├──create.js
+│  │  │  │  ├──ensure-array.js
+│  │  │  │  ├──ensure-finite-number.js
+│  │  │  │  ├──ensure-natural-number-value.js
+│  │  │  │  ├──ensure-natural-number.js
+│  │  │  │  ├──ensure-promise.js
+│  │  │  │  ├──eq.js
+│  │  │  │  ├──every.js
+│  │  │  │  ├──filter.js
+│  │  │  │  ├──find-key.js
+│  │  │  │  ├──find.js
+│  │  │  │  ├──first-key.js
+│  │  │  │  ├──flatten.js
+│  │  │  │  ├──for-each.js
+│  │  │  │  ├──get-property-names.js
+│  │  │  │  ├──is-array-like.js
+│  │  │  │  ├──is-callable.js
+│  │  │  │  ├──is-copy-deep.js
+│  │  │  │  ├──is-copy.js
+│  │  │  │  ├──is-empty.js
+│  │  │  │  ├──is-finite-number.js
+│  │  │  │  ├──is-number-value.js
+│  │  │  │  ├──is-object.js
+│  │  │  │  ├──is-plain-function.js
+│  │  │  │  ├──is-plain-object.js
+│  │  │  │  ├──is-promise.js
+│  │  │  │  ├──is-value.js
+│  │  │  │  ├──is.js
+│  │  │  │  ├──key-of.js
+│  │  │  │  ├──map-keys.js
+│  │  │  │  ├──map.js
+│  │  │  │  ├──mixin-prototypes.js
+│  │  │  │  ├──mixin.js
+│  │  │  │  ├──normalize-options.js
+│  │  │  │  ├──primitive-set.js
+│  │  │  │  ├──safe-traverse.js
+│  │  │  │  ├──serialize.js
+│  │  │  │  ├──some.js
+│  │  │  │  ├──to-array.js
+│  │  │  │  ├──unserialize.js
+│  │  │  │  ├──valid-callable.js
+│  │  │  │  ├──valid-object.js
+│  │  │  │  ├──valid-value.js
+│  │  │  │  ├──validate-array-like-object.js
+│  │  │  │  ├──validate-array-like.js
+│  │  │  │  ├──validate-stringifiable-value.js
+│  │  │  │  ├──validate-stringifiable.js
+│  │  │  │  ├──set-prototype-of
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──keys
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──assign
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  ├──number
+│  │  │  │  ├──is-natural.js
+│  │  │  │  ├──is-number.js
+│  │  │  │  ├──to-integer.js
+│  │  │  │  ├──to-pos-integer.js
+│  │  │  │  ├──to-uint32.js
+│  │  │  │  ├──min-safe-integer
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  └──is-implemented.js
+│  │  │  │  ├──max-safe-integer
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  └──is-implemented.js
+│  │  │  │  ├──is-safe-integer
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──is-nan
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──is-integer
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──is-finite
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──epsilon
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  └──is-implemented.js
+│  │  │  │  ├──#
+│  │  │  │  │  └──pad.js
+│  │  │  ├──math
+│  │  │  │  ├──_pack-ieee754.js
+│  │  │  │  ├──_unpack-ieee754.js
+│  │  │  │  ├──trunc
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──tanh
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──sinh
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──sign
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──log2
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──log1p
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──log10
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──imul
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──hypot
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──fround
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──expm1
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──cosh
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──clz32
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──cbrt
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──atanh
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──asinh
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──acosh
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  ├──json
+│  │  │  │  └──safe-stringify.js
+│  │  │  ├──iterable
+│  │  │  │  ├──for-each.js
+│  │  │  │  ├──is.js
+│  │  │  │  ├──validate-object.js
+│  │  │  │  └──validate.js
+│  │  │  ├──function
+│  │  │  │  ├──_define-length.js
+│  │  │  │  ├──constant.js
+│  │  │  │  ├──identity.js
+│  │  │  │  ├──invoke.js
+│  │  │  │  ├──is-arguments.js
+│  │  │  │  ├──is-function.js
+│  │  │  │  ├──noop.js
+│  │  │  │  ├──pluck.js
+│  │  │  │  ├──valid-function.js
+│  │  │  │  ├──#
+│  │  │  │  │  ├──compose.js
+│  │  │  │  │  ├──copy.js
+│  │  │  │  │  ├──curry.js
+│  │  │  │  │  ├──lock.js
+│  │  │  │  │  ├──not.js
+│  │  │  │  │  ├──partial.js
+│  │  │  │  │  ├──spread.js
+│  │  │  │  │  └──to-string-tokens.js
+│  │  │  ├──error
+│  │  │  │  ├──custom.js
+│  │  │  │  ├──is-error.js
+│  │  │  │  ├──valid-error.js
+│  │  │  │  ├──#
+│  │  │  │  │  └──throw.js
+│  │  │  ├──date
+│  │  │  │  ├──is-date.js
+│  │  │  │  ├──valid-date.js
+│  │  │  │  ├──#
+│  │  │  │  │  ├──copy.js
+│  │  │  │  │  ├──days-in-month.js
+│  │  │  │  │  ├──floor-day.js
+│  │  │  │  │  ├──floor-month.js
+│  │  │  │  │  ├──floor-year.js
+│  │  │  │  │  └──format.js
+│  │  │  ├──boolean
+│  │  │  │  └──is-boolean.js
+│  │  │  ├──array
+│  │  │  │  ├──__scopes.js
+│  │  │  │  ├──_is-extensible.js
+│  │  │  │  ├──_sub-array-dummy-safe.js
+│  │  │  │  ├──_sub-array-dummy.js
+│  │  │  │  ├──generate.js
+│  │  │  │  ├──is-plain-array.js
+│  │  │  │  ├──to-array.js
+│  │  │  │  ├──valid-array.js
+│  │  │  │  ├──of
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──from
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──#
+│  │  │  │  │  ├──_compare-by-length.js
+│  │  │  │  │  ├──binary-search.js
+│  │  │  │  │  ├──clear.js
+│  │  │  │  │  ├──compact.js
+│  │  │  │  │  ├──contains.js
+│  │  │  │  │  ├──diff.js
+│  │  │  │  │  ├──e-index-of.js
+│  │  │  │  │  ├──e-last-index-of.js
+│  │  │  │  │  ├──exclusion.js
+│  │  │  │  │  ├──first-index.js
+│  │  │  │  │  ├──first.js
+│  │  │  │  │  ├──flatten.js
+│  │  │  │  │  ├──for-each-right.js
+│  │  │  │  │  ├──group.js
+│  │  │  │  │  ├──indexes-of.js
+│  │  │  │  │  ├──intersection.js
+│  │  │  │  │  ├──is-copy.js
+│  │  │  │  │  ├──is-empty.js
+│  │  │  │  │  ├──is-uniq.js
+│  │  │  │  │  ├──last-index.js
+│  │  │  │  │  ├──last.js
+│  │  │  │  │  ├──remove.js
+│  │  │  │  │  ├──separate.js
+│  │  │  │  │  ├──some-right.js
+│  │  │  │  │  ├──uniq.js
+│  │  │  │  │  ├──values
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──splice
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──slice
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──map
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──keys
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──find-index
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──find
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──filter
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──fill
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──entries
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──copy-within
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──concat
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  │  │  │  ├──@@iterator
+│  │  │  │  │  │  ├──implement.js
+│  │  │  │  │  │  ├──index.js
+│  │  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  │  └──shim.js
+│  │  ├──string
+│  │  │  ├──format-method.js
+│  │  │  ├──index.js
+│  │  │  ├──is-string.js
+│  │  │  ├──random-uniq.js
+│  │  │  ├──raw
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──from-code-point
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──#
+│  │  │  │  ├──at.js
+│  │  │  │  ├──camel-to-hyphen.js
+│  │  │  │  ├──capitalize.js
+│  │  │  │  ├──case-insensitive-compare.js
+│  │  │  │  ├──count.js
+│  │  │  │  ├──hyphen-to-camel.js
+│  │  │  │  ├──indent.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──last.js
+│  │  │  │  ├──pad.js
+│  │  │  │  ├──plain-replace-all.js
+│  │  │  │  ├──plain-replace.js
+│  │  │  │  ├──uncapitalize.js
+│  │  │  │  ├──starts-with
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──repeat
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──normalize
+│  │  │  │  │  ├──_data.js
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──ends-with
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──contains
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──code-point-at
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──@@iterator
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  ├──reg-exp
+│  │  │  ├──escape.js
+│  │  │  ├──index.js
+│  │  │  ├──is-reg-exp.js
+│  │  │  ├──valid-reg-exp.js
+│  │  │  ├──#
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-sticky.js
+│  │  │  │  ├──is-unicode.js
+│  │  │  │  ├──unicode
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  └──is-implemented.js
+│  │  │  │  ├──sticky
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  └──is-implemented.js
+│  │  │  │  ├──split
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──search
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──replace
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──match
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  ├──object
+│  │  │  ├──_iterate.js
+│  │  │  ├──assign-deep.js
+│  │  │  ├──clear.js
+│  │  │  ├──compact.js
+│  │  │  ├──compare.js
+│  │  │  ├──copy-deep.js
+│  │  │  ├──copy.js
+│  │  │  ├──count.js
+│  │  │  ├──create.js
+│  │  │  ├──ensure-array.js
+│  │  │  ├──ensure-finite-number.js
+│  │  │  ├──ensure-natural-number-value.js
+│  │  │  ├──ensure-natural-number.js
+│  │  │  ├──ensure-promise.js
+│  │  │  ├──eq.js
+│  │  │  ├──every.js
+│  │  │  ├──filter.js
+│  │  │  ├──find-key.js
+│  │  │  ├──find.js
+│  │  │  ├──first-key.js
+│  │  │  ├──flatten.js
+│  │  │  ├──for-each.js
+│  │  │  ├──get-property-names.js
+│  │  │  ├──index.js
+│  │  │  ├──is-array-like.js
+│  │  │  ├──is-callable.js
+│  │  │  ├──is-copy-deep.js
+│  │  │  ├──is-copy.js
+│  │  │  ├──is-empty.js
+│  │  │  ├──is-finite-number.js
+│  │  │  ├──is-number-value.js
+│  │  │  ├──is-object.js
+│  │  │  ├──is-plain-function.js
+│  │  │  ├──is-plain-object.js
+│  │  │  ├──is-promise.js
+│  │  │  ├──is-value.js
+│  │  │  ├──is.js
+│  │  │  ├──key-of.js
+│  │  │  ├──map-keys.js
+│  │  │  ├──map.js
+│  │  │  ├──mixin-prototypes.js
+│  │  │  ├──mixin.js
+│  │  │  ├──normalize-options.js
+│  │  │  ├──primitive-set.js
+│  │  │  ├──safe-traverse.js
+│  │  │  ├──serialize.js
+│  │  │  ├──some.js
+│  │  │  ├──to-array.js
+│  │  │  ├──unserialize.js
+│  │  │  ├──valid-callable.js
+│  │  │  ├──valid-object.js
+│  │  │  ├──valid-value.js
+│  │  │  ├──validate-array-like-object.js
+│  │  │  ├──validate-array-like.js
+│  │  │  ├──validate-stringifiable-value.js
+│  │  │  ├──validate-stringifiable.js
+│  │  │  ├──set-prototype-of
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──keys
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──assign
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  ├──number
+│  │  │  ├──index.js
+│  │  │  ├──is-natural.js
+│  │  │  ├──is-number.js
+│  │  │  ├──to-integer.js
+│  │  │  ├──to-pos-integer.js
+│  │  │  ├──to-uint32.js
+│  │  │  ├──min-safe-integer
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  └──is-implemented.js
+│  │  │  ├──max-safe-integer
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  └──is-implemented.js
+│  │  │  ├──is-safe-integer
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──is-nan
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──is-integer
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──is-finite
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──epsilon
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  └──is-implemented.js
+│  │  │  ├──#
+│  │  │  │  ├──index.js
+│  │  │  │  └──pad.js
+│  │  ├──math
+│  │  │  ├──_pack-ieee754.js
+│  │  │  ├──_unpack-ieee754.js
+│  │  │  ├──index.js
+│  │  │  ├──trunc
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──tanh
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──sinh
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──sign
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──log2
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──log1p
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──log10
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──imul
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──hypot
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──fround
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──expm1
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──cosh
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──clz32
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──cbrt
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──atanh
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──asinh
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──acosh
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  ├──json
+│  │  │  ├──index.js
+│  │  │  └──safe-stringify.js
+│  │  ├──iterable
+│  │  │  ├──for-each.js
+│  │  │  ├──index.js
+│  │  │  ├──is.js
+│  │  │  ├──validate-object.js
+│  │  │  └──validate.js
+│  │  ├──function
+│  │  │  ├──_define-length.js
+│  │  │  ├──constant.js
+│  │  │  ├──identity.js
+│  │  │  ├──index.js
+│  │  │  ├──invoke.js
+│  │  │  ├──is-arguments.js
+│  │  │  ├──is-function.js
+│  │  │  ├──noop.js
+│  │  │  ├──pluck.js
+│  │  │  ├──valid-function.js
+│  │  │  ├──#
+│  │  │  │  ├──compose.js
+│  │  │  │  ├──copy.js
+│  │  │  │  ├──curry.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──lock.js
+│  │  │  │  ├──not.js
+│  │  │  │  ├──partial.js
+│  │  │  │  ├──spread.js
+│  │  │  │  └──to-string-tokens.js
+│  │  ├──error
+│  │  │  ├──custom.js
+│  │  │  ├──index.js
+│  │  │  ├──is-error.js
+│  │  │  ├──valid-error.js
+│  │  │  ├──#
+│  │  │  │  ├──index.js
+│  │  │  │  └──throw.js
+│  │  ├──date
+│  │  │  ├──index.js
+│  │  │  ├──is-date.js
+│  │  │  ├──valid-date.js
+│  │  │  ├──#
+│  │  │  │  ├──copy.js
+│  │  │  │  ├──days-in-month.js
+│  │  │  │  ├──floor-day.js
+│  │  │  │  ├──floor-month.js
+│  │  │  │  ├──floor-year.js
+│  │  │  │  ├──format.js
+│  │  │  │  └──index.js
+│  │  ├──boolean
+│  │  │  ├──index.js
+│  │  │  └──is-boolean.js
+│  │  ├──array
+│  │  │  ├──_is-extensible.js
+│  │  │  ├──_sub-array-dummy-safe.js
+│  │  │  ├──_sub-array-dummy.js
+│  │  │  ├──generate.js
+│  │  │  ├──index.js
+│  │  │  ├──is-plain-array.js
+│  │  │  ├──to-array.js
+│  │  │  ├──valid-array.js
+│  │  │  ├──of
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──from
+│  │  │  │  ├──implement.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──is-implemented.js
+│  │  │  │  └──shim.js
+│  │  │  ├──#
+│  │  │  │  ├──_compare-by-length.js
+│  │  │  │  ├──binary-search.js
+│  │  │  │  ├──clear.js
+│  │  │  │  ├──compact.js
+│  │  │  │  ├──contains.js
+│  │  │  │  ├──diff.js
+│  │  │  │  ├──e-index-of.js
+│  │  │  │  ├──e-last-index-of.js
+│  │  │  │  ├──exclusion.js
+│  │  │  │  ├──first-index.js
+│  │  │  │  ├──first.js
+│  │  │  │  ├──flatten.js
+│  │  │  │  ├──for-each-right.js
+│  │  │  │  ├──group.js
+│  │  │  │  ├──index.js
+│  │  │  │  ├──indexes-of.js
+│  │  │  │  ├──intersection.js
+│  │  │  │  ├──is-copy.js
+│  │  │  │  ├──is-empty.js
+│  │  │  │  ├──is-uniq.js
+│  │  │  │  ├──last-index.js
+│  │  │  │  ├──last.js
+│  │  │  │  ├──remove.js
+│  │  │  │  ├──separate.js
+│  │  │  │  ├──some-right.js
+│  │  │  │  ├──uniq.js
+│  │  │  │  ├──values
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──splice
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──slice
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──map
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──keys
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──find-index
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──find
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──filter
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──fill
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──entries
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──copy-within
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──concat
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  │  │  │  ├──@@iterator
+│  │  │  │  │  ├──implement.js
+│  │  │  │  │  ├──index.js
+│  │  │  │  │  ├──is-implemented.js
+│  │  │  │  │  └──shim.js
+│  ├──d
+│  │  ├──.lint
+│  │  ├──.npmignore
+│  │  ├──.travis.yml
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──auto-bind.js
+│  │  ├──index.js
+│  │  ├──lazy.js
+│  │  ├──package.json
+│  │  ├──test
+│  │  │  ├──auto-bind.js
+│  │  │  ├──index.js
+│  │  │  └──lazy.js
+│  ├──commander
+│  │  ├──History.md
+│  │  ├──LICENSE
+│  │  ├──Readme.md
+│  │  ├──index.js
+│  │  └──package.json
+│  ├──cli-color
+│  │  ├──.lint
+│  │  ├──.npmignore
+│  │  ├──.travis.yml
+│  │  ├──CHANGES
+│  │  ├──LICENSE
+│  │  ├──README.md
+│  │  ├──art.js
+│  │  ├──bare.js
+│  │  ├──beep.js
+│  │  ├──columns.js
+│  │  ├──erase.js
+│  │  ├──get-stripped-length.js
+│  │  ├──index.js
+│  │  ├──move.js
+│  │  ├──package.json
+│  │  ├──reset.js
+│  │  ├──slice.js
+│  │  ├──strip.js
+│  │  ├──throbber.js
+│  │  ├──window-size.js
+│  │  ├──test
+│  │  │  ├──art.js
+│  │  │  ├──bare.js
+│  │  │  ├──beep.js
+│  │  │  ├──columns.js
+│  │  │  ├──erase.js
+│  │  │  ├──get-stripped-length.js
+│  │  │  ├──index.js
+│  │  │  ├──move.js
+│  │  │  ├──reset.js
+│  │  │  ├──slice.js
+│  │  │  ├──strip.js
+│  │  │  ├──throbber.js
+│  │  │  ├──visual.js
+│  │  │  ├──window-size.js
+│  │  │  ├──lib
+│  │  │  │  ├──sgr.js
+│  │  │  │  ├──xterm-colors.js
+│  │  │  │  └──xterm-match.js
+│  │  │  ├──__playground
+│  │  │  │  ├──throbber.formatted.js
+│  │  │  │  └──throbber.js
+│  │  ├──lib
+│  │  │  ├──sgr.js
+│  │  │  ├──xterm-colors.js
+│  │  │  └──xterm-match.js
+│  │  ├──examples
+│  │  │  ├──art.js
+│  │  │  ├──basic.js
+│  │  │  ├──erase.js
+│  │  │  ├──styles.js
+│  │  │  ├──throbber.js
+│  │  │  └──xterm.js
+│  │  ├──bin
+│  │  │  └──generate-color-images
+│  ├──ansi-regex
+│  │  ├──index.js
+│  │  ├──license
+│  │  ├──package.json
+│  │  └──readme.md
+├──.vscode
+│  └──launch.json
+├──.git
+│  ├──FETCH_HEAD
+│  ├──HEAD
+│  ├──config
+│  ├──description
+│  ├──index
+│  ├──packed-refs
+│  ├──refs
+│  │  ├──tags
+│  │  ├──remotes
+│  │  │  ├──origin
+│  │  │  │  └──HEAD
+│  │  ├──heads
+│  │  │  └──master
+│  ├──objects
+│  │  ├──pack
+│  │  │  ├──pack-ad22ede012a435ba182f70ff9ce47b77fa9c4050.idx
+│  │  │  └──pack-ad22ede012a435ba182f70ff9ce47b77fa9c4050.pack
+│  │  ├──info
+│  ├──logs
+│  │  ├──HEAD
+│  │  ├──refs
+│  │  │  ├──remotes
+│  │  │  │  ├──origin
+│  │  │  │  │  └──HEAD
+│  │  │  ├──heads
+│  │  │  │  └──master
+│  ├──info
+│  │  └──exclude
+│  ├──hooks
+│  │  ├──applypatch-msg.sample
+│  │  ├──commit-msg.sample
+│  │  ├──post-update.sample
+│  │  ├──pre-applypatch.sample
+│  │  ├──pre-commit.sample
+│  │  ├──pre-push.sample
+│  │  ├──pre-rebase.sample
+│  │  ├──prepare-commit-msg.sample
+│  │  └──update.sample
+│  ├──branches
