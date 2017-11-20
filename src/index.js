@@ -73,8 +73,8 @@ let result = jsonTree(program.directory);
 
 
 console.log(result)
+let { border, contain, last } = actions;
 const printTree = (data, placeholder) => {
-  let { border, contain, last } = actions;
   for (let i in data) {
     if (typeof data[i] === "string") {
       outputString += "\n" + placeholder + data[i];
@@ -82,13 +82,15 @@ const printTree = (data, placeholder) => {
       outputString += "\n" + placeholder + i;
       placeholder = placeholder.replace(new RegExp(`${contain}`, "g"), border);
       placeholder += "  " + contain;
+      
       placeholder = placeholder.replace(/^ +/g, "");
       data[i].forEach((value, key, array) => {
+        let pl = placeholder;
         if (key === array.length - 1) {
-            placeholder = placeholder.replace(new RegExp(`${contain}$`, "g"), last);
+          pl = placeholder.replace(new RegExp(`${contain}$`, "g"), last);
         }
         if (typeof value === "string") {
-          outputString += "\n" + placeholder + value;
+          outputString += "\n" + pl + value;
         } else {
           printTree(value, placeholder);
         }
@@ -123,55 +125,8 @@ if (program.color) {
 //     }
 
 // }
+//outputString = outputString.replace(/^\n/, '')
 
-// const result = dirToJson(program.directory)
-// console.log(result)
-// let outputString = ''
-
-// const drawDirTree = (data, placeholder) => {
-//     let {border,contain,line,last} = actions;
-//     for (let i in data) {
-
-//         if (typeof data[i] === 'string') {
-
-//             // console.log(placeholder + data[i])
-//             outputString += '\n' + placeholder + data[i]
-//         } else if (Array.isArray(data[i])) {
-//             // console.log(placeholder + i)
-//             outputString += '\n' + placeholder + i
-//             placeholder = placeholder.replace(new RegExp(`${contain}`, "g"), border)
-//             placeholder = placeholder.replace(new RegExp(`${line}`, "g"), " ")
-
-//             placeholder = placeholder + Array(Math.ceil(i.length / 2)).join(" ") + contain
-
-//             placeholder = placeholder.replace(new RegExp("^ +", 'g'), "")
-//             data[i].forEach((val, idx, arr) => {
-//                 let pl = placeholder
-//                 //if the idx is the last one, change the character
-//                 if (idx === (arr.length - 1)) {
-//                     let regex = new RegExp(`${contain}${line}$`, "g")
-
-//                     pl = placeholder.replace(regex, last)
-//                 }
-
-//                 if (typeof val === 'string') {
-//                     // console.log(pl + val)
-//                     outputString += '\n' + pl + val
-//                 } else {
-//                     let pl = placeholder
-//                     drawDirTree(val, pl)
-
-//                 }
-//             })
-//         }
-//     }
-// }
-
-// drawDirTree(result, "")
-
-// outputString = outputString.replace(/^\n/, '')
-
-// console.log(outputString)
 
 // //if export path is specified
 if (program.export) {

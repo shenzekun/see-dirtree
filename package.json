@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is commandline tool to show catalog tree",
   "main": "index.js",
+  "bin": {
+    "tree" : "./src/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
