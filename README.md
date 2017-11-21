@@ -48,4 +48,9 @@ tree -e data.txt
 tree -c
 ```
 
+* You can specify a directory to generate structure tree
+
+```
+tree -d src
+```
 
