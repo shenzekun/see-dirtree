@@ -26,12 +26,12 @@ Usage: tree [options]
 
   Options:
 
-    -V, --version          output the version number
-    -d, --directory [dir]  Please specify a directory to generate structure tree
-    -c, --color            Terminal coloring
-    -i, --ignore [ig]      You can ignore specific directory name
-    -e, --export [epath]   export into file
-    -h, --help             output usage information
+    -V, --version              output the version number
+    -d, --directory [dir]      Please specify a directory to generate catalog tree
+    -c, --color                Terminal coloring
+    -i, --ignore [ignore]      You can ignore specific directory name
+    -e, --export [exportPath]  export into a file
+    -h, --help                 output usage information
 ```
 
 
