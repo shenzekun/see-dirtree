@@ -7,19 +7,15 @@ const clc = require("cli-color");
 
 program
   .version(package.version)
-  .option(
-    "-d, --directory [dir]",
-    "Please specify a directory to generate structure tree",
-    process.cwd()
-  )
+  .option("-d, --directory [dir]","Please specify a directory to generate catalog tree",process.cwd())
   .option("-c, --color", "Terminal coloring")
   .option("-i, --ignore [ignore]", "You can ignore specific directory name")
   .option("-e, --export [exportPath]", "export into a file")
   .parse(process.argv);
 
 let colorArray = [];
-if (program.color) colorArray = [15, 80, 158, 81, 221, 140, 212];
-let actions = {
+if (program.color) colorArray = [15, 80, 158, 81, 221, 140, 212,179,177,191,195];
+const actions = {
   border: "│",
   contain: "├──",
   last: "└──"
@@ -31,7 +27,7 @@ if (program.ignore) {
   if (Object.prototype.toString.call(program.ignore) !== "[object Boolean]") {
     program.ignore = program.ignore.replace(/\s*|\s*/g, "");
   } else {
-     throw new Error('Please input parameters to be ignored ==> Example：tree -i "node_module|.git"');
+    throw new Error('Please input parameters to be ignored ==> Example：tree -i "node_module|.git"');
   }
 }
 
@@ -75,7 +71,7 @@ const jsonTree = path => {
   return contentJson;
 };
 
-let result = jsonTree(program.directory);
+const result = jsonTree(program.directory);
 
 // console.log(result)
 let { border, contain, last } = actions;
@@ -107,17 +103,17 @@ const printTree = (data, placeholder) => {
 printTree(result, "");
 
 //将第一行的换行符去掉
-outputString = outputString.replace(/^\n/g,"");
+outputString = outputString.replace(/^\n/g, "");
 //如果颜色指令被指定
 if (program.color) {
-  let msg = clc.xterm(colorArray[Math.floor(Math.random() * 7)]);
+  let msg = clc.xterm(colorArray[Math.floor(Math.random() * 11)]);
   console.log(msg(outputString));
 } else {
   console.log(outputString);
 }
 //如果导出路径被指定
 if (program.export) {
-  if (Object.prototype.toString.call(program.export) !== '[object Boolean]') {
+  if (Object.prototype.toString.call(program.export) !== "[object Boolean]") {
     fs.writeFile(program.export, outputString, err => {
       if (err) throw err;
       console.log("\n\n" + "The result has been saved into " + program.export);
