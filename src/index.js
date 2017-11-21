@@ -105,6 +105,9 @@ const printTree = (data, placeholder) => {
 };
 
 printTree(result, "");
+
+//将第一行的换行符去掉
+outputString = outputString.replace(/^\n/g,"");
 //如果颜色指令被指定
 if (program.color) {
   let msg = clc.xterm(colorArray[Math.floor(Math.random() * 7)]);
