@@ -1,6 +1,6 @@
 {
   "name": "see-dirtree",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This is commandline tool to show catalog tree",
   "main": "index.js",
   "bin": {

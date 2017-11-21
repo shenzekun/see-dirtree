@@ -37,7 +37,7 @@ if (program.ignore) {
 
 let stat = fs.statSync(program.directory);
 
-//将是对象的放到后面
+//将是对象的放到数组后面
 const sortDir = arr => {
   let len = arr.length - 1;
   for (let i = len; i >= 0; i--) {
