@@ -31,8 +31,6 @@ if (program.ignore) {
   }
 }
 
-let stat = fs.statSync(program.directory);
-
 //将是对象的放到数组后面
 const sortDir = arr => {
   let len = arr.length - 1;
@@ -47,7 +45,7 @@ const sortDir = arr => {
 };
 
 const jsonTree = path => {
-  const stat = fs.statSync(program.directory);
+  let stat = fs.lstatSync(program.directory);
   let contentJson = {};
   if (stat.isDirectory()) {
     let dir = fs.readdirSync(path);
@@ -57,7 +55,7 @@ const jsonTree = path => {
       });
     }
     dir = dir.map(child => {
-      let childStat = fs.statSync(path + "/" + child);
+      let childStat = fs.lstatSync(path + "/" + child);
       return childStat.isDirectory() ? jsonTree(path + "/" + child) : child;
     });
     // 获取目录名
