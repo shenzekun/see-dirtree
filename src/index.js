@@ -57,7 +57,7 @@ const jsonTree = path => {
       });
     }
     dir = dir.map(child => {
-      let childStat = fs.lstatSync(path + "/" + child);
+      let childStat = fs.statSync(path + "/" + child);
       return childStat.isDirectory() ? jsonTree(path + "/" + child) : child;
     });
     // 获取目录名
@@ -75,6 +75,7 @@ const result = jsonTree(program.directory);
 
 // console.log(result)
 let { border, contain, last } = actions;
+
 const printTree = (data, placeholder) => {
   // console.log(Object.keys(data))
   for (let i of Object.keys(data)) {
@@ -104,6 +105,7 @@ printTree(result, "");
 
 //将第一行的换行符去掉
 outputString = outputString.replace(/^\n/g, "");
+
 //如果颜色指令被指定
 if (program.color) {
   let msg = clc.xterm(colorArray[Math.floor(Math.random() * 11)]);
@@ -111,6 +113,7 @@ if (program.color) {
 } else {
   console.log(outputString);
 }
+
 //如果导出路径被指定
 if (program.export) {
   if (Object.prototype.toString.call(program.export) !== "[object Boolean]") {
