@@ -4,6 +4,8 @@ This is commandLine tool to show catalog tree
 
 ## Install
 
+>Input command below in terminal
+
 ```
 npm install -g see-dirtree
 ```
@@ -34,9 +36,9 @@ Usage: tree [options]
 
 
 
-**Example:**
+## Example:
 
-* You can export data to a file.Input this command below,you can see data.txt in your current path.
+* You can export data to a file.Input command below,you can see data.txt in your current path.
 
 ```
 tree -e data.txt
@@ -54,3 +56,8 @@ tree -c
 tree -d "src"
 ```
 
+* You can ignore specific directory name
+
+```
+tree -i "node_modules|.git"
+```
