@@ -13,7 +13,7 @@ program
     process.cwd()
   )
   .option("-c, --color", "Terminal coloring")
-  .option("-i, --ignore [ig]", "You can ignore specific directory name")
+  .option("-i, --ignore [ignore]", "You can ignore specific directory name")
   .option("-e, --export [epath]", "export into file")
   .parse(process.argv);
 
@@ -26,10 +26,9 @@ let actions = {
 };
 let outputString = "";
 
-// if (program.ignore) {
-//     program.ignore = program.ignore.replace(/^\s*|\s*$/g, '');
-
-// }
+if (program.ignore) {
+    program.ignore = program.ignore.replace(/\s*|\s*/g, '');
+}
 
 let stat = fs.statSync(program.directory);
 
@@ -52,7 +51,7 @@ const jsonTree = path => {
     let dir = fs.readdirSync(path);
     if (program.ignore) {
       dir = dir.filter((val, index, array) => {
-        return !/node_modules|.git/.test(val);
+        return !new RegExp(`${program.ignore}`,"g").test(val);
       });
     }
     dir = dir.map(child => {
@@ -60,10 +59,10 @@ const jsonTree = path => {
       return childStat.isDirectory() ? jsonTree(path + "/" + child) : child;
     });
     // 获取文件名
-    let dirName = path.replace(/.*\/(?!$)/g, "");
+    let dirName = path.replace(/.*(?=\/)\//g, "");
     contentJson[dirName] = sortDir(dir);
   } else {
-    let fileName = path.replace(/.*\/(?!$)/g, "");
+    let fileName = path.replace(/.*(?=\/)\//g, "");
     return fileName;
   }
   return contentJson;
