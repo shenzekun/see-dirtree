@@ -44,7 +44,7 @@ Usage: tree [options]
 tree -e data.txt
 ```
 
-* You can see catalog tree with color(random color,because color almost bright color，The recommended terminal is dark theme )
+* You can see catalog tree with color(random color,Because the color is bright color, it is **recommended** that the terminal's theme be **dark** )
 
 ```
 tree -c
