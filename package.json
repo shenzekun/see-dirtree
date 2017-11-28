@@ -4,7 +4,7 @@
   "description": "This is commandLine tool to show catalog tree",
   "main": "index.js",
   "bin": {
-    "tree" : "./src/index.js"
+    "tree": "./src/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
