@@ -7,20 +7,22 @@ const clc = require("cli-color");
 
 program
   .version(package.version)
-  .option("-d, --directory [dir]","Please specify a directory to generate catalog tree",process.cwd())
+  .option("-d, --directory [dir]", "Please specify a directory to generate catalog tree", process.cwd())
   .option("-c, --color", "Terminal coloring")
   .option("-i, --ignore [ignore]", "You can ignore specific directory name")
   .option("-e, --export [exportPath]", "export into a file")
   .parse(process.argv);
 
 let colorArray = [];
-if (program.color) colorArray = [15, 80, 158, 81, 221, 140, 212,179,177,191,195];
+if (program.color) colorArray = [15, 80, 158, 81, 221, 140, 212, 179, 177, 191, 195];
 const actions = {
   border: "│",
   contain: "├──",
   last: "└──"
 };
-let outputString = "";
+let outputString = ""; //记录输出的目录树
+let directories = 0,
+  files = 0; //记录文件数和目录数
 
 //如果忽略路径被指定
 if (program.ignore) {
@@ -48,6 +50,7 @@ const jsonTree = path => {
   let stat = fs.lstatSync(program.directory);
   let contentJson = {};
   if (stat.isDirectory()) {
+    directories++;
     let dir = fs.readdirSync(path);
     if (program.ignore) {
       dir = dir.filter((val, index, array) => {
@@ -56,13 +59,19 @@ const jsonTree = path => {
     }
     dir = dir.map(child => {
       let childStat = fs.lstatSync(path + "/" + child);
-      return childStat.isDirectory() ? jsonTree(path + "/" + child) : child;
+      if (childStat.isDirectory()) {
+        return jsonTree(path + "/" + child);
+      } else {
+        files++;
+        return child;
+      }
     });
     // 获取目录名
     let dirName = path.replace(/.*(?=\/)\//g, "");
     contentJson[dirName] = sortDir(dir);
   } else {
     //获取文件名
+    files++;
     let fileName = path.replace(/.*(?=\/)\//g, "");
     return fileName;
   }
@@ -72,7 +81,11 @@ const jsonTree = path => {
 const result = jsonTree(program.directory);
 
 // console.log(result)
-let { border, contain, last } = actions;
+let {
+  border,
+  contain,
+  last
+} = actions;
 
 const printTree = (data, placeholder) => {
   // console.log(Object.keys(data))
@@ -108,14 +121,16 @@ outputString = outputString.replace(/^\n/g, "");
 if (program.color) {
   let msg = clc.xterm(colorArray[Math.floor(Math.random() * 11)]);
   console.log(msg(outputString));
+  console.log(msg(`\n${directories} directories, ${files} files.`));
 } else {
   console.log(outputString);
+  console.log(`\n${directories} directories, ${files} files.`)
 }
 
 //如果导出路径被指定
 if (program.export) {
   if (Object.prototype.toString.call(program.export) !== "[object Boolean]") {
-    fs.writeFile(program.export, outputString, err => {
+    fs.writeFile(program.export, `${outputString}\n\n${directories} directories, ${files} files.`, err => {
       if (err) throw err;
       console.log("\n\n" + "The result has been saved into " + program.export);
     });
